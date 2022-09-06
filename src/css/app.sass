@@ -1,0 +1,915 @@
+// app global css in Sass form
+
+@font-face
+  font-family: rubik
+  src: url(./fonts/Rubik-Regular.ttf)
+
+@font-face
+  font-family: rubikmedium
+  src: url(./fonts/Rubik-Medium.ttf)
+
+body
+  font-family: 'rubik'
+
+.font-medium
+  font-family: 'rubikmedium'
+
+.rounded-borders-10
+  border-radius: 10px
+
+.light-shadow
+  box-shadow: 0 0 5px rgba(0, 0, 0, 5%)
+
+.light-shadow-10
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10%)
+
+.quantity-input .q-field__control
+  padding: 0
+
+.limited-width
+  max-width: 1300px !important
+
+.light-shadow-15
+  box-shadow: 0 0 15px rgba(0, 0, 0, 15%)
+  transition: box-shadow 2s ease-in-out
+
+.hover-shadow,
+.hover-shadow-blue
+  transition: all 0.5s ease-in-out
+  border: 1px solid transparent
+
+.hover-shadow:hover
+  box-shadow: 0 0 6px rgba(0, 0, 0, 50%)
+
+.hover-shadow-blue:hover
+  box-shadow: 0 0 15px rgba(80, 181, 221, 40%)
+  border: 1px solid #cccccc
+
+.hover-black-bg
+  border: 1px solid grey
+
+.hover-black-bg:hover
+  border: 1px solid #333333
+  background: #333333 !important
+  color: white
+  border-radius: 5px
+
+.product-link:hover
+  color: #29ABE2
+
+.sections-card
+  transition: 1.5s ease-in-out
+
+.sections-card:hover
+  color: #29ABE2
+
+.footer-tab:hover
+  color: white
+
+.font-size-10
+  font-size: 0.625rem
+
+.font-size-12
+  font-size: 0.75rem
+
+.font-size-15
+  font-size: 0.9375rem
+
+.font-size-15
+  th
+    font-size: 0.9375rem
+
+.font-size-18
+  font-size: 1.125rem
+
+.font-size-25
+  font-size: 1.5625rem
+
+.font-size-45
+  font-size: 2.8125rem
+
+.line-height-15
+  line-height: 0.9375rem
+
+.line-height-22
+  line-height: 1.375rem
+
+.line-height-21
+  line-height: 1.3125rem
+
+.line-height-24
+  line-height: 1.5rem
+
+.line-height-19
+  line-height: 1.1875rem
+
+.line-height-17
+  line-height: 1.0625rem
+
+.line-height-30
+  line-height: 1.875rem
+
+.line-height-58
+  line-height: 3.625rem
+
+.dense-quantity.q-field--dense .q-field__control,
+.dense-quantity.q-field--dense .q-field__marginal
+  height: 25px !important
+
+.dense-inputs
+  .q-field--dense .q-field__control,
+  .q-field--dense .q-field__marginal
+    height: 2.375rem
+  .q-field--auto-height.q-field--dense .q-field__control, .q-field--auto-height.q-field--dense .q-field__native
+    min-height: 2.375rem
+
+.highlighted-row:hover
+  color: black
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 20%)
+
+.transparent-img .q-img__image--loaded
+  opacity: 54%
+
+.q-radio__bg path
+  fill: #9e9e9e !important
+
+.q-radio__bg path.q-radio__check
+  fill: #757575 !important
+
+.q-radio__inner
+  color: #757575 !important
+
+.q-scrollarea__bar--v,
+.q-scrollarea__thumb--v
+  width: 2px
+.q-field--labeled.q-field--dense .q-field__native,
+.q-field--labeled.q-field--dense .q-field__prefix,
+.q-field--labeled.q-field--dense .q-field__suffix
+  padding-bottom: 8px
+.assembly
+  &__breadcrumbs
+    display: none
+  &-product
+    &__slider-counter
+      display: none
+    &__slider-info_mobile
+      display: none !important
+    &__status_mobile
+      display: none
+  &__components
+    &-info
+      display: none
+    &-title
+      .q-btn
+        display: none
+    &-name_mobile
+      display: none
+    &-subtitle
+      display: none
+    &-button
+      display: none
+  &-addToCard,
+  &-addToCard__button
+    display: none !important
+  &__dialog-close
+    .icon_mobile
+      display: none
+@media (max-width: 833px)
+  .assembly
+    flex-direction: column-reverse !important
+    padding-bottom: 12px !important
+    &-wrapper
+      width: 100% !important
+      padding: 0 16px 
+    &-product
+      position: static !important
+      transform: none !important
+      margin: 16px 0 !important
+      margin-top: 5px !important
+      &__wrapper
+        width: 98% !important
+      &__item
+        width: 100% !important
+    &__breadcrumbs
+      display: flex
+      padding-left: 16px
+      margin: 0 !important
+      margin-top: 7px !important
+      .q-tab
+        width: auto !important
+        flex: auto !important
+        padding: 0 !important
+        min-height: auto !important
+      .q-tab__indicator,
+      .q-focus-helper
+        display: none !important
+    &-product
+      margin-bottom: 0 !important
+      pointer-events: unset !important
+      &__wrapper
+        width: calc(100% - 32px) !important
+        margin: 0 !important
+      &__item
+        height: 280px !important
+        padding: 0 !important
+        .q-card
+          height: 100% !important
+          padding: 8px !important
+          border-radius: 8px !important
+          position: relative
+      &__original
+        width: 100%
+        position: absolute
+        display: flex
+        flex-direction: column
+        align-items: center
+        left: 0 !important
+        bottom: 2px !important
+      &__status
+        display: none !important
+        &_mobile
+          display: block !important
+          z-index: 999
+          top: 5px
+          left: 5px !important
+      &__slider
+        height: 100% !important
+        &-counter
+          display: block
+          position: absolute
+          top: 6px
+          right: 6px
+          font-size: 14px
+          padding: 0 6px
+          background: rgba(0, 0, 0, .4)
+          border-radius: 4px
+          color: #fff
+          z-index: 9
+        .q-carousel,
+        .q-carousel__slide
+          height: 100% !important
+        &-buttons
+          display: none !important
+        .q-carousel__control
+          display: none !important
+        &-info
+          display: none !important
+          &_mobile
+            width: 100%
+            display: block !important
+            padding: 8px
+            background-color: #fff
+            border-radius: 8px
+            margin: 10px 16px 0 16px
+      &__price
+        font-size: 22px !important
+        line-height: 24px !important
+      &__subprice,
+      &__name
+        font-size: 16px !important
+        line-height: 20px !important
+        line-break: anywhere
+        padding-right: 10px
+      &__number
+        span.text-caption
+          font-size: 12px !important
+          line-height: 14px !important
+          line-break: anywhere
+          padding-right: 10px
+      &__addToCard,
+      &__socials
+        display: none
+    &__components
+      padding: 8px !important
+      &-row
+        flex-direction: column-reverse
+      .assembly__components-button
+        span
+          color: #9e9e9e
+          &.close
+            display: none
+      &-info
+        display: block
+        position: absolute
+        left: 5px
+      .q-item
+        height: auto !important
+        margin: 5px 0 !important
+        border-radius: 4px !important
+        padding: 4px 8px !important
+        padding-right: 0 !important
+        align-items: flex-start !important
+        background-color: #edecec !important
+        .q-radio__bg
+          width: 70%
+          height: 70%
+          top: 15%
+          left: 15%
+          right: auto
+        .q-checkbox__bg
+          width: 60%
+          height: 60%
+          top: 20%
+          left: 20%
+          right: auto
+      .q-list
+        .q-item
+          display: none
+        &.active
+          .q-item
+            display: flex
+          .assembly__components-button
+            .q-btn
+              transform: rotate(-90deg)
+              span
+                display: flex
+            span
+              &.change
+                display: none
+              &.close
+                display: block
+                color: #757575
+      .q-radio,
+      .q-checkbox
+        padding: 0 2px
+        position: absolute
+        right: 0
+        bottom: 2px
+        &__inner
+          font-size: 29px !important
+      &-name
+        display: none !important
+        &_mobile
+          display: block
+          border-bottom: 1px solid #bababa
+          padding-bottom: 4px
+          margin-bottom: 4px
+          white-space: unset !important
+          .product-link
+            font-size: 14px !important
+            line-height: 16px !important
+            color: #4D4D4D !important
+      &-title
+        display: flex
+        justify-content: space-between
+        .q-btn
+          display: flex
+          &::before
+            box-shadow: none !important
+          i
+            font-size: 24px !important
+          &.active
+            i
+              color: #F15A24 !important
+      &-subtitle
+        display: block
+        font-size: 12px !important
+        line-height: 14px !important
+        color: #808080
+        .product-link
+          font-size: 14px !important
+      .q-item__label
+        justify-content: space-between
+        align-items: center !important
+        padding: 0 36px 0 28px
+        &--header
+          padding: 0 !important
+      &-label
+        display: flex
+        justify-content: space-between !important
+        font-size: 14px !important
+        border: none !important
+      &-button
+        display: flex
+        align-items: center
+        span
+          color: #29ABE2
+          cursor: pointer
+        .q-btn
+          &::before
+            box-shadow: none !important
+          span
+            color: #757575
+      &-image
+        display: none !important
+    &-specifications
+      margin: 0 !important
+      padding: 0 !important
+    &__specifications
+      width: 100% !important
+      display: flex
+      flex-direction: column-reverse
+      padding: 0 !important
+      margin: 0 !important
+      &-categories
+        margin-top: 10px !important
+      &-description
+        display: none !important
+    &__description
+      width: 100% !important
+      padding: 0 !important
+      margin: 10px 0 !important
+      &-title 
+        margin-bottom: 20px !important
+    &-addToCard
+      display: block !important
+      width: 100%
+      margin-top: 0 !important
+      padding: 0 !important
+      &__links
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: #fff
+        border-radius: 8px
+      &__link
+        padding: 14px 0 7px 0
+      &__socials
+        width: 90%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 8px 0
+        margin-top: 6px
+        border-top: 1px solid #d0cbcb
+      &__button
+        height: 60px
+        display: flex !important
+        flex-direction: row-reverse
+        align-items: center
+        position: sticky
+        bottom: 0
+        background-color: #333333
+        margin-top: 12px !important
+        z-index: 999
+        &-price,
+        .q-btn
+          width: 50%
+        &-price
+          display: flex !important
+          flex-direction: column !important
+          justify-content: center !important
+          align-items: flex-start !important
+          margin-right: 15px
+        &--price
+          font-size: 18px !important
+          line-height: 20px !important
+          color: #fff !important
+          margin-bottom: 5px !important
+        &--subprice
+          font-size: 12px !important
+          line-height: 14px !important
+          color: #fff !important
+        .q-btn
+          height: 40px !important
+          margin: 0 15px !important
+          color: #fff !important
+          border-color: #fff !important
+          border-radius: 6px !important
+    &__dialog
+      &-close
+        position: absolute
+        top: -15px
+        left: -15px
+        z-index: 99
+        display: flex
+        justify-content: flex-start
+        .icon_web
+          display: none
+        .icon_mobile
+          display: block
+        .q-btn  
+          background: transparent !important
+          .q-focus-helper
+            display: none
+          i
+            font-size: 30px
+            border-radius: 50%
+            background: #fff
+            color: #9e9e9e
+      .q-dialog__inner
+        padding: 0 !important
+      &-card
+        width: 85% !important
+        max-height: 100% !important
+        height: 60vh
+        border-radius: 8px !important
+        overflow: visible !important
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3) !important
+      &-wrapper,
+      &-block
+        width: 100% !important
+        max-height: 100% !important
+        height: 100% !important
+        overflow-y: auto !important
+      &-wrapper
+        padding-right: 0
+      &-block
+        flex-direction: column !important
+        flex-wrap: unset !important
+        justify-content: flex-start !important
+        &::-webkit-scrollbar
+          width: 4px
+        &::-webkit-scrollbar-thumb 
+          background: #888
+        .assembly-product__name,
+        .assembly-product__number
+          margin-left: 8px
+      &-image,
+      &-content
+        width: 100% !important
+        padding: 0 4px !important
+      &-content
+        height: auto !important
+        overflow: hidden
+        .q-item 
+          padding: 0 !important
+          border-bottom: 1px solid #d0cbcb !important
+          border-top: none !important
+          margin: 0 8px
+          &.assembly__dialog-chars
+            border-bottom: none !important
+        &-values
+          display: none
+        .q-scrollarea__content
+          position: relative !important
+          .q-list
+            padding-top: 0
+        .q-item 
+          &__section
+            font-size: 12px !important
+            line-height: 14px !important
+        .q-scrollarea
+          padding: 0
+          &__thumb
+            display: none
+        &-cTitle,
+        &-cDescription
+          font-size: 12px !important
+          line-height: 14px !important
+          margin: 0 8px
+        &-cTitle
+          padding: 12px 0 !important
+      &-image
+        &-slider
+          height: 250px
+          position: relative
+        &-controls
+          display: none
+        .q-carousel
+          height: 100% !important
+          &__control 
+            display: none
+      &-chars
+        .q-item__section
+          font-size: 16px !important
+          line-height: 20px !important
+          opacity: .5
+      &-char
+        font-family: 'rubikmedium'
+        font-size: 12px
+        line-height: 16px
+        color: #000
+        margin: 6px 0 4px 0
+      &-value
+        font-size: 14px
+        line-height: 18px
+        margin-left: 0 !important
+        margin-bottom: 6px
+.product-card
+  &__list
+    z-index: 0
+    .product-status_mobile
+      display: none
+    .product-addCard
+      display: none
+    &-specifications-button
+      display: none
+  &__grid
+    .product-specifications-button_mobile
+      display: none
+@media (max-width: 992px) 
+  .section 
+    padding: 0 16px
+    &__wrapper 
+      width: 100% !important
+  .product-card 
+    &__grid 
+      width: 33% !important
+@media (max-width: 833px) 
+  .section 
+    &__wrapper 
+      width: 100% !important
+    .q-btn
+      padding-top: 0 !important
+      padding-bottom: 0 !important
+    &__wrapper-view 
+      align-items: center !important
+    &__view-buttons 
+      font-size: 14px !important
+    .product-addCard 
+      height: 27px
+      margin-bottom: 2px
+      button 
+        height: 100% !important
+        border-radius: 6px !important
+  .section__pagination 
+    width: 90%
+    margin: 0 auto !important
+    flex-direction: column-reverse !important
+    &-perPage 
+      flex-direction: column !important
+      align-items: center !important
+      margin: 0
+      .col 
+        width: 100%
+        justify-content: center
+      .q-field__append
+        margin: 0 !important
+        padding: 0 !important
+    .q-pagination 
+      justify-content: space-around !important
+      margin-bottom: 14px !important
+      margin-top: 0
+  .product-card 
+      &__list 
+        height: 139px !important
+        border-radius: 12px
+        margin-top: 8px !important
+        padding: 8px
+        .product-status 
+          display: none
+        .product-number
+          height: 24px !important
+          text-align: left !important
+          overflow: hidden !important
+          margin-top: 6px !important
+          &_mobile 
+            display: block
+        &-image 
+          width: 40% !important
+          align-items: flex-end !important
+          padding: 0 !important
+          padding-right: 8px !important
+          .q-img 
+            max-height: 75px !important
+            &__image 
+              object-fit: contain !important
+        .product-addCard 
+          display: block
+          width: 100%
+          button 
+            border-radius: 6px !important
+        .product-price 
+          display: block
+          padding: 0 !important
+          padding-top: 12px !important
+          &_mobile
+            display: none
+          span 
+            font-size: 14px !important
+            line-height: 16px !important
+            color: #000 !important
+        .q-separator 
+          display: none !important
+        &-specifications 
+          display: none
+          &_outside
+            display: block
+            width: 100%
+            height: 100%
+            position: fixed
+            top: 0
+            left: 0
+            background: rgba(0, 0, 0, 0.4)
+            z-index: 99
+          &_mobile 
+            display: block
+            width: calc(100% + 16px)
+            height: calc(100% + 16px)
+            position: absolute !important
+            border-radius: 12px !important
+            box-shadow: none !important
+            z-index: 999
+            top: -8px
+            left: -8px
+            .q-list
+              margin-top: 8px !important
+            .text-subtitle1
+              font-size: 12px !important
+              line-height: 16px !important
+            .ellipsis ,
+            .ellipsis-2-lines
+              font-size: 10px !important
+              line-height: 14px !important
+            .q-btn__content 
+              width: 20px
+              height: 20px !important
+              top: 2px
+              right: 2px
+              position: absolute
+            .q-card__section 
+              padding: 8px !important
+              padding-top: 5px !important
+          &-button 
+            display: block
+            width: 24px !important
+            padding: 0 !important
+            right: 0 
+            bottom: -4px
+        &-description 
+          width: 60% !important
+          padding-bottom: 0 !important
+          .product-link 
+            height: 32px
+            font-size: 12px !important
+            line-height: 16px !important
+            margin-bottom: 8px !important
+          .text-body1,
+          .text-subtitle1 
+            font-size: 10px !important
+            line-height: 14px !important
+          .product-copy,
+          .q-space 
+            display: none
+      &__grid 
+        height: 290px !important
+        border-radius: 12px !important
+        &-card 
+          padding: 12px 8px !important
+          padding-top: 0 !important
+          border-radius: 12px !important
+        &-image 
+          height: 139px !important
+          padding: 0 !important
+          padding-top: 16px !important
+          .q-img 
+            max-height: 105px !important
+        .product-description 
+          padding: 0 !important
+        .product-specifications
+          .q-list
+            margin-top: 8px !important
+          .text-subtitle1
+            font-size: 12px !important
+            line-height: 16px !important
+          .ellipsis ,
+          .ellipsis-2-lines
+            font-size: 10px !important
+            line-height: 14px !important
+          .q-btn__content 
+            width: 20px
+            height: 20px !important
+            top: 2px
+            right: 2px
+            position: absolute
+          .q-card__section 
+            padding: 8px !important
+            padding-right: 0 !important
+            padding-top: 5px !important
+          .q-item
+            min-height: auto !important
+            margin-bottom: 2px !important
+        .product-specifications-button 
+          display: none
+        .product-specifications-button_mobile 
+          display: block
+          width: 24px !important
+          height: 24px !important
+          padding: 0 !important
+          right: 0
+          bottom: 0 !important
+        .product-link,
+        .text-subtitle2 
+          font-size: 12px !important
+          line-height: 14px !important
+        .text-subtitle2 
+          margin: 8px 0 12px 0 !important
+        .product-price 
+          position: relative
+          font-size: 14px !important
+          line-height: 16px !important
+        .product-specifications-button 
+          width: 24px !important
+          right: 8px !important
+          bottom: 4px !important
+          padding: 0 !important
+        .product-specifications,
+        .product-specifications .q-card__section 
+          height: 100% !important
+          border-radius: 12px !important
+        .q-img__image 
+          object-fit: contain !important
+  .product  
+    &__specifications
+      &-categories
+        display: none
+      &-description 
+        margin-top: 8px
+        .q-card__section  
+          padding-top: 8px
+      &-title 
+        font-size: 18px
+        margin-bottom: 8px
+      &-item
+        display: block
+        border-bottom: 1px solid #d0cbcb
+        padding-bottom: 6px
+        div
+          max-width: 100% !important
+          font-size: 14px
+          line-height: 18px
+          &:first-child 
+            margin: 6px 0 4px 0
+.social-links
+  display: flex
+  align-items: center
+  a
+    font-size: 25px
+    margin-right: 10px
+    color: #373737
+    transition: .2s ease
+    &:hover
+      transform: scale(1.1)
+      &:first-child
+        color: #0088cc
+      &:nth-child(2)
+        color: #25d366
+      &:nth-child(3)
+        color: #59267c
+      &:nth-child(4)
+        color: #1877f2
+      &:last-child
+        color: #1da1f2
+@media (max-width: 833px)
+  .social-links
+    a
+      margin: 0 8px !important
+  .q-carousel.fullscreen
+    background: #000 !important
+  .q-carousel__navigation--thumbnails 
+    width: 100% !important
+    height: 90px !important
+    left: 0 !important
+    margin: 0 !important
+    position: absolute !important
+    bottom: 0 !important
+    top: auto !important
+  .q-carousel__navigation-inner
+    flex-direction: row !important
+    align-items: flex-end !important
+    padding-bottom: 16px !important
+    overflow-x: auto !important
+  .confirm-delete__buttons
+    flex-direction: color !important
+    div
+      width: 100% !important
+      padding-right: 0 !important
+      padding-top: 8px !important
+@media (max-width: 568px)
+  .product-card 
+    &__grid 
+      width: 50% !important
+@media only screen and (max-width: 833px) and (orientation: landscape)
+  .assembly
+    &-addToCard
+      &__button
+        height: 32px
+        &--price
+          font-size: 12px !important
+          line-height: 16px !important
+          margin-bottom: 0 !important
+        &--subprice
+          font-size: 10px !important
+          line-height: 14px !important
+        .q-btn
+          height: 18px !important
+          font-size: 10px
+.q-dialog
+  overflow: auto !important
+  .q-card 
+    overflow: visible !important
+.dialog
+  &__wrapper
+    border-radius: 8px !important
+  &__close
+    width: 38px
+    position: absolute
+    top: -15px
+    left: -15px
+    z-index: 99
+    display: flex
+    justify-content: flex-start
+    .q-btn  
+      background: transparent !important
+      .q-focus-helper
+        display: none
+      i
+        font-size: 30px
+        border-radius: 50%
+        background: #fff
+        color: #9e9e9e
+        
+        
+    
+  
